@@ -3,7 +3,7 @@
 ## users table
 |Column|Type|Option|
 |------|----|------|
-|username|string|null: false, index: true, unique: true|
+|name|string|null: false, index: true, unique: true|
 |email|string|null: false|
 |password|string|null: false|
 ## Association
@@ -14,16 +14,16 @@
 ## groups table
 |Column|Type|Option|
 |------|----|------|
-|groupname|string|null: false|
-|user_id|integer|null: false|
+|name|string|null: false|
 ## Association
+- has_many :messages
 - has_many :groups_users 
 - has_many :users, through:  :groups_users
 
-## message table
+## messages table
 |Column|Type|Option|
 |------|----|------|
-|body|text|null: false|
+|body|text||
 |image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
