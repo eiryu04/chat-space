@@ -1,0 +1,35 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %p.main-header__left-box__group-name
+        test
+      %p.main-header__left-box__member-list
+        Member : yuri
+    %p.main-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .messages__message
+      .messages__message__info
+        %p.messages__message__info__talker
+          me
+        %p.messages__message__info__date
+          2020/01/01(wed)00:00:00
+      %p.messages__message__text
+        あけましておめでとうございます
+    .messages__message
+      .messages__message__info
+        %p.messages__message__info__talker
+          you
+        %p.messages__message__info__date
+          2020/01/01(wed)00:00:00
+      %p.messages__message__text
+        今年もよろしくお願いします
+  .form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('far', 'image')
+            %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}

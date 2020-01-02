@@ -1,0 +1,23 @@
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box-user-name
+        yuri
+      %ul.side-header__box-icons
+        %li.side-header__box-icons__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-header__box-icons__new-edit
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .side-groups
+    .side-groups__group
+      %p.side-groups__group__group-name
+        testroom
+      %p.side-groups__group__group-message
+        まだメッセージがありません
+    .side-groups__group
+      %p.side-groups__group__group-name
+        testroom
+      %p.side-groups__group__group-message
+        まだメッセージがありません
