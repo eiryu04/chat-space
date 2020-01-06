@@ -49,12 +49,17 @@ $white-color: #ffffff;
     &__group{
       margin-bottom: 40px;
       color: $white-color;
+      &__group-link{
+        text-decoration: none;
+      }
       &__group-name{
         font-size: 15px;
+        color: $white-color;
       }
       &__group-message{
         font-size: 11px;
         padding-top: 5px;
+        color: $white-color;
       }
     }
   }  
