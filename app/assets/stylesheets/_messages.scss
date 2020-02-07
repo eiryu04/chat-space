@@ -71,7 +71,6 @@ $white-color: #ffffff;
   .main-header{
     height: 100px;
     padding: 0 40px;
-    background-color: #eeeeee;
     display: flex;
     justify-content: space-between;
     &__left-box{
@@ -108,6 +107,7 @@ $white-color: #ffffff;
     padding: 46px 40px;
     &__message{
       padding-bottom: 40px;
+      background-color: #fafafa;
       display: block;
       &__info{
         display: flex;
